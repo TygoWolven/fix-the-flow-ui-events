@@ -46,7 +46,7 @@ a:nth-of-type(2) {
   color: var(--secondary);
   border-color: var(--secondary);
 }
-  
+
 a:nth-of-type(5) {
   position: relative;
   background: red;
@@ -170,7 +170,7 @@ a:nth-of-type(8) {
 
 .dropping {
   animation: dropping 5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; 
 }
 
 @keyframes dropping {
