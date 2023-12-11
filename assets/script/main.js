@@ -46,11 +46,17 @@ function dropFall() {
   the.classList.toggle('dropping')
 };
 
-let interaction = document.querySelector('#flow')
+flow.addEventListener('keyup', jumpHigh)
+function jumpHigh() {
+  flow.classList.toggle('jump')
+};
 
-interaction.addEventListener('click', jumpHandler)
-interaction.addEventListener('animationend', jumpHandler)
+user.addEventListener('keydown', btnFlash)
+function btnFlash() {
+  user.classList.toggle('flash')
+};
 
-function jumpHandler() {
-  interaction.classList.toggle('jump')
-}
+interface.addEventListener('keydown', btnFlash)
+function btnFlash() {
+  interface.classList.toggle('flash')
+};

@@ -42,14 +42,14 @@ a:hover {
 /* Jump animation on the interaction link */
 a:nth-of-type(2) {
   position: relative;
-  background: yellow;
+  background: #FDFD96;
   color: var(--secondary);
   border-color: var(--secondary);
 }
 
 a:nth-of-type(5) {
   position: relative;
-  background: red;
+  background: #FF6961;
   color: var(--secondary);
   border-color: var(--secondary);
 }
@@ -150,11 +150,14 @@ a:nth-of-type(8) {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(30em);
+    transform: translateX(50em);
   }
   26% {
-    display: none;
-    transform: translateX(-40em);
+    visibility: hidden;
+  }
+  35% {
+    visibility: hidden;
+    transform: translateX(-50em);
   }
   90% {
     transform: translateX(3em);
@@ -186,5 +189,57 @@ a:nth-of-type(8) {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.flash {
+  animation: flash 2s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes flash {
+  0% {
+    color: white;
+    border-color: white;
+  }
+  10% {
+    color: yellow;
+    border-color: yellow;
+  }
+  20% {
+    color: white;
+    border-color: white;
+  }
+  30% {
+    color: yellow;
+    border-color: yellow;
+  }
+  40% {
+    color: white;
+    border-color: white;
+  }
+  50% {
+    color: yellow;
+    border-color: yellow;
+  }
+  60% {
+    color: white;
+    border-color: white;
+  }
+  70% {
+    color: yellow;
+    border-color: yellow;
+  }
+  80% {
+    color: white;
+    border-color: white;
+  }
+  90% {
+    color: yellow;
+    border-color: yellow;
+  }
+  100% {
+    color: white;
+    border-color: white;
   }
 }
