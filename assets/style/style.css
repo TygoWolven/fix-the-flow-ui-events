@@ -40,7 +40,21 @@ a:hover {
 /* UI Event Classes */
 
 /* Jump animation on the interaction link */
-a:nth-of-type(12) {
+a:nth-of-type(2) {
+  position: relative;
+  background: yellow;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+  
+a:nth-of-type(5) {
+  position: relative;
+  background: red;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(8) {
   position: relative;
   background: var(--highlight-secondary);
   color: var(--secondary);
@@ -79,3 +93,98 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+.purple {
+  color: var(--highlight-secondary);
+  border-color: var(--highlight-secondary);
+}
+
+.vanish {
+  transition: ease-in 2s;
+  opacity: 0;
+}
+
+.rainbow {
+  animation: rainbow 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: red;
+    color: red;
+  }
+  10% {
+    border-color: orange;
+    color: orange;
+  }
+  30% {
+    border-color: yellow;
+    color: yellow;
+  }
+  50% {
+    border-color: yellowgreen;
+    color: yellowgreen;
+  }
+  60% {
+    border-color: cyan;
+    color: cyan;
+  }
+  80% {
+    border-color: pink;
+    color: pink;
+  }
+  100% {
+    border-color: red;
+    color: red;
+  }
+}
+
+.sprint {
+  animation: sprint 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes sprint {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(30em);
+  }
+  26% {
+    display: none;
+    transform: translateX(-40em);
+  }
+  90% {
+    transform: translateX(3em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.dropping {
+  animation: dropping 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes dropping {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(30em) rotate(45deg);
+  }
+  41% {
+    display: none;
+    transform: translateY(-30em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
