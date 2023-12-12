@@ -36,12 +36,12 @@ function sprintSprinting() {
   sprint5.classList.toggle('sprint')
 };
 
-fix.addEventListener('mouseout', filterBlur)
+fix.addEventListener('mouseleave', filterBlur)
 function filterBlur() {
   fix.classList.toggle('blur')
 };
 
-the.addEventListener('mouseenter', dropFall)
+the.addEventListener('mouseout', dropFall)
 function dropFall() {
   the.classList.toggle('dropping')
 };
@@ -56,7 +56,7 @@ function btnFlash() {
   user.classList.toggle('flash')
 };
 
-interface.addEventListener('keydown', btnFlash)
-function btnFlash() {
-  interface.classList.toggle('flash')
+interface.addEventListener('mousedown', rotateHelicopter)
+function rotateHelicopter() {
+  interface.classList.toggle('rotate')
 };

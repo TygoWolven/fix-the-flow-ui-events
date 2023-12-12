@@ -243,3 +243,17 @@ a:nth-of-type(8) {
     border-color: white;
   }
 }
+
+.rotate {
+  animation: rotate .8s;
+  animation-iteration-count: 3;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
