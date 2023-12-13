@@ -107,35 +107,36 @@ a:nth-of-type(8) {
 .rainbow {
   animation: rainbow 5s;
   animation-iteration-count: infinite;
+  border-color:currentColor;
 }
 
 @keyframes rainbow {
   0% {
-    border-color: red;
+    /* border-color: red; */
     color: red;
   }
   10% {
-    border-color: orange;
+    /* border-color: orange; */
     color: orange;
   }
   30% {
-    border-color: yellow;
+    /* border-color: yellow; */
     color: yellow;
   }
   50% {
-    border-color: yellowgreen;
+    /* border-color: yellowgreen; */
     color: yellowgreen;
   }
   60% {
-    border-color: cyan;
+    /* border-color: cyan; */
     color: cyan;
   }
   80% {
-    border-color: pink;
+    /* border-color: pink; */
     color: pink;
   }
   100% {
-    border-color: red;
+    /* border-color: red; */
     color: red;
   }
 }
